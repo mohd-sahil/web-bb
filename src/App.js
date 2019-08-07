@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Home } from "./Home";
+import { Home } from "./components/home/Home";
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
@@ -8,6 +8,7 @@ import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
 import { Jumbotron } from "./components/Jumbotron";
 import Everything from "../src/slider/Everything";
+import Youtube from "../src/youtube/Youtube";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
           </Router>
         </React.Fragment>
         <Everything />
+        <Youtube />
       </div>
     );
   }
