@@ -1,0 +1,25 @@
+/* .box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  width: 100%;
+  color: black;
+  column-gap: 100px;
+} */
+
+#grid {
+  display: grid;
+  height: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px;
+  column-gap: 20px;
+}
+
+button {
+  display: grid;
+  height: 27px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 4px;
+}

@@ -5,7 +5,7 @@ import { About } from "./About";
 import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
-import { NavigationBar } from "./components/NavigationBar";
+import { NavigationBar } from "./components/navbar/NavigationBar";
 import { Jumbotron } from "./components/Jumbotron";
 import Everything from "../src/slider/Everything";
 import Youtube from "../src/youtube/Youtube";
