@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { About } from "./About";
 import { Contact } from "./Contact";
@@ -9,6 +9,7 @@ import { NavigationBar } from "./components/navbar/NavigationBar";
 import { Jumbotron } from "./components/Jumbotron";
 import Everything from "../src/slider/Everything";
 import Youtube from "../src/youtube/Youtube";
+import Login from "../src/components/navbar/login/pages/Login";
 
 class App extends Component {
   render() {
@@ -23,13 +24,13 @@ class App extends Component {
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/login" component={Login} />
+
                 <Route component={NoMatch} />
               </Switch>
             </Layout>
           </Router>
         </React.Fragment>
-        <Everything />
-        <Youtube />
       </div>
     );
   }

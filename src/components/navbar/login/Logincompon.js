@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import style from "../login/login.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Logincompon extends Component {
   constructor() {
@@ -21,9 +22,9 @@ class Logincompon extends Component {
       <div className="box" id="grid">
         <ul>
           <h1>Artist</h1>
-          <button>
-            <a href="./show.html">Login</a>
-          </button>
+
+          <Link to="/login">Login</Link>
+
           <button>
             <a href="./events.html">signup</a>
           </button>

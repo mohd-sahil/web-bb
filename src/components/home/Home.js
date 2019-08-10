@@ -1,6 +1,9 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
+import Youtube from "../../youtube/Youtube";
+import Everything from "../../slider/Everything";
+
 import bgimage from "../../assets/bg-img/54.jpg";
 
 const Styles = styled.div`
@@ -61,5 +64,7 @@ export const Home = () => (
         </div>
       </Container>
     </Jumbo>
+    <Everything />
+    <Youtube />
   </Styles>
 );
