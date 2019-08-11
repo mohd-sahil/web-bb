@@ -23,29 +23,43 @@ class Logincompon extends Component {
         <ul>
           <h1>Artist</h1>
 
-          <Link to="/login">Login</Link>
+          <button>
+            <Link to="/login" href="./events.html">
+              login
+            </Link>
+          </button>
 
           <button>
-            <a href="./events.html">signup</a>
+            <Link to="/signup" href="./events.html">
+              signup
+            </Link>
           </button>
         </ul>
         <ul>
           <h1>Band</h1>
           <button>
-            <a href="./show.html">Login</a>
+            <Link to="/login" href="./events.html">
+              login
+            </Link>
           </button>
           <button>
-            <a href="./events.html">signup</a>
+            <Link to="/signup" href="./events.html">
+              signup
+            </Link>
           </button>
         </ul>
         <ul>
           <h1>studio</h1>
 
           <button>
-            <a href="./show.html">Login</a>
+            <Link to="/login" href="./events.html">
+              login
+            </Link>
           </button>
           <button>
-            <a href="./events.html">signup</a>
+            <Link to="/signup" href="./events.html">
+              signup
+            </Link>
           </button>
         </ul>
 
@@ -53,10 +67,14 @@ class Logincompon extends Component {
           <h1>crew-member</h1>
 
           <button>
-            <a href="./show.html">Login</a>
+            <Link to="/login" href="./events.html">
+              login
+            </Link>
           </button>
           <button>
-            <a href="./events.html">signup</a>
+            <Link to="/signup" href="./events.html">
+              signup
+            </Link>
           </button>
         </ul>
 
@@ -64,10 +82,14 @@ class Logincompon extends Component {
           <h1>Fan</h1>
 
           <button>
-            <a href="./show.html">Login</a>
+            <Link to="/login" href="./events.html">
+              login
+            </Link>
           </button>
           <button>
-            <a href="./events.html">signup</a>
+            <Link to="/signup" href="./events.html">
+              signup
+            </Link>
           </button>
         </ul>
       </div>

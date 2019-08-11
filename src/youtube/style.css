@@ -8,7 +8,6 @@
 .text {
   margin-top: 50px;
   margin-left: 40%;
-  color: black;
 }
 .one {
   grid-column: 1 / 3;

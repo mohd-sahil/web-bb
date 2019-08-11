@@ -6,7 +6,7 @@ class Youtube extends React.Component {
   render() {
     const opts = {
       height: "300",
-      width: "400",
+      width: "340",
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
         autoplay: 1
@@ -16,6 +16,7 @@ class Youtube extends React.Component {
     return (
       <div>
         <h1 className="text">trending in youtube</h1>
+
         <div className="grid-container">
           <div className="one">
             <YouTube

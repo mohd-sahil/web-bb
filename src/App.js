@@ -10,6 +10,7 @@ import { Jumbotron } from "./components/Jumbotron";
 import Everything from "../src/slider/Everything";
 import Youtube from "../src/youtube/Youtube";
 import Login from "../src/components/navbar/login/pages/Login";
+import Signup from "../src/components/navbar/login/pages/Signup";
 
 class App extends Component {
   render() {
@@ -18,13 +19,14 @@ class App extends Component {
         <React.Fragment>
           <Router>
             <NavigationBar />
-            <Jumbotron />
+
             <Layout>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/login" component={Login} />
+                <Route path="/signup" component={Signup} />
 
                 <Route component={NoMatch} />
               </Switch>

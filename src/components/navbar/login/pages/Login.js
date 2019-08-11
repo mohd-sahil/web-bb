@@ -13,6 +13,7 @@ class Login extends Component {
               className="FormFields"
               onSubmit={this.handleSubmit}
             >
+              <h1>Login form</h1>
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="email">
                   E-Mail Address

@@ -1,6 +1,7 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
 import styled from "styled-components";
+import Jumbotron from "../Jumbotron";
 import Youtube from "../../youtube/Youtube";
 import Everything from "../../slider/Everything";
 
@@ -33,38 +34,43 @@ const Styles = styled.div`
 `;
 
 export const Home = () => (
-  <Styles>
-    <Jumbo fluid className="jumbo">
-      <div className="overlay" />
-      <Container className="content">
-        <h1>Bandbazaar</h1>
-        <p>
-          Bandbazaar.com is an online platform that provides marketing
-          <br />
-          tools and industry opportunities for emerging musicians,
-          <br />
-          artists, bands, event manager’s photographers, graphic
-          <br />
-          designers, sound engineers, and band crew members to build
-          <br />
-          their careers. We’ve connected artists to venues, festivals,
-          <br />
-          brands, publishers, labels, and the fans themselves.
-          <br />
-          Bandbazaar.com provide a social networking platform for bands
-          <br />
-          to connect to their community
-        </p>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6">
-              <div className="app-thumbnail mb-80" />
+  <div>
+    <Jumbotron />
+
+    <Styles>
+      <Jumbo fluid className="jumbo">
+        <div className="overlay" />
+
+        <Container className="content">
+          <h1>Bandbazaar</h1>
+          <p>
+            Bandbazaar.com is an online platform that provides marketing
+            <br />
+            tools and industry opportunities for emerging musicians,
+            <br />
+            artists, bands, event manager’s photographers, graphic
+            <br />
+            designers, sound engineers, and band crew members to build
+            <br />
+            their careers. We’ve connected artists to venues, festivals,
+            <br />
+            brands, publishers, labels, and the fans themselves.
+            <br />
+            Bandbazaar.com provide a social networking platform for bands
+            <br />
+            to connect to their community
+          </p>
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-12 col-md-6">
+                <div className="app-thumbnail mb-80" />
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
-    </Jumbo>
-    <Everything />
-    <Youtube />
-  </Styles>
+        </Container>
+      </Jumbo>
+      <Everything />
+      <Youtube />
+    </Styles>
+  </div>
 );
