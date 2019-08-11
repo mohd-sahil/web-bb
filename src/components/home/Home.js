@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Jumbotron from "../Jumbotron";
 import Youtube from "../../youtube/Youtube";
 import Everything from "../../slider/Everything";
+import OurServices from "../OurServices";
 
 import bgimage from "../../assets/bg-img/54.jpg";
 
@@ -69,6 +70,7 @@ export const Home = () => (
           </div>
         </Container>
       </Jumbo>
+      <OurServices />
       <Everything />
       <Youtube />
     </Styles>
