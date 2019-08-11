@@ -7,8 +7,7 @@
 
 /*====== WIDTH ======*/
 .screenW {
-  margin-left: 25%;
-  width: 50vw;
+  width: 100%;
 }
 .fullW {
   width: 100%;
@@ -98,5 +97,6 @@
 }
 
 .text {
+  font-size: 2vm;
   color: #fff;
 }

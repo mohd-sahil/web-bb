@@ -16,3 +16,4 @@ const Dot = ({ slideId, dotId }) => (
 );
 
 export default memo(Dot);
+ 
