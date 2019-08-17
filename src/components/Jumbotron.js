@@ -1,11 +1,13 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container } from "react-bootstrap";
-import styled from "styled-components";
+import styled from "styled-components"; 
 import bgimage from "../assets/bg-img/33.jpg";
 import logo from "../assets/bandbazar/BandBazaar-logo.png";
 
 const Styles = styled.div`
   .jumbo {
+    text-align:center;
+    width:100%;
     background: url(${bgimage}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
@@ -25,27 +27,20 @@ const Styles = styled.div`
     z-index: -1;
   }
 
-  .content {
-    margin-left: 35%;
+  .responsive{
+    max-width:100%;
+    max-height:100%;
+    position:relative;  
   }
 `;
 
-const Jumbotron = () => (
+ const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
       <div className="overlay" />
-      <Container className="content">
-        <img src={logo} alt="" />
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6">
-              <div className="app-thumbnail mb-80" />
-            </div>
-          </div>
-        </div>
-      </Container>
+        <img src={logo} alt="" className="responsive" /> 
     </Jumbo>
   </Styles>
 );
 
-export default Jumbotron;
+export default Jumbotron; 

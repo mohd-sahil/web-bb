@@ -14,33 +14,33 @@ class Youtube extends React.Component {
     };
 
     return (
-      <div>
-        <h1 className="text">trending in youtube</h1>
+      <div className="container">
+    <h1 className="text">trending in youtube</h1>
 
-        <div className="grid-container">
-          <div className="one">
-            <YouTube
-              videoId="y6fThXQPT6I"
-              opts={opts}
-              onReady={this._onReady}
-            />
-          </div>
-          <div className="two">
-            <YouTube
-              videoId="bo_efYhYU2A"
-              opts={opts}
-              onReady={this._onReady}
-            />
-          </div>
-          <div className="three">
-            <YouTube
-              videoId="3AtDnEC4zak"
-              opts={opts}
-              onReady={this._onReady}
-            />
-          </div>
-        </div>
+    <div className="row justify-content-center">
+      <div className="col-xs-12 col-md-4">
+        <YouTube
+          videoId="y6fThXQPT6I"
+          opts={opts}
+          onReady={this._onReady}
+        />
       </div>
+      <div className="col-xs-12 col-md-4">
+        <YouTube
+          videoId="bo_efYhYU2A"
+          opts={opts}
+          onReady={this._onReady}
+        />
+      </div>
+      <div className="col-xs-12 col-md-4">
+        <YouTube
+          videoId="3AtDnEC4zak"
+          opts={opts}
+          onReady={this._onReady}
+        />
+      </div>
+    </div>
+  </div>
     );
   }
 

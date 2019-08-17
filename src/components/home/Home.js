@@ -18,7 +18,6 @@ const Styles = styled.div`
     position: relative;
     z-index: -2;
   }
-
   .overlay {
     background-color: #000;
     opacity: 0.6;
@@ -29,7 +28,6 @@ const Styles = styled.div`
     right: 0;
     z-index: -1;
   }
-
   .content {
     margin-left: 35%;
   }
@@ -42,12 +40,13 @@ export const Home = () => (
     <Styles>
       <Jumbo fluid className="jumbo">
         <div className="overlay" />
-
-        <Container className="content">
-          <h1>Bandbazaar</h1>
-          <p>
+          <div className="container">
+          <h1 style={{textAlign:"center"}}>Bandbazaar</h1>
+          <div className="row justify-content-center">
+            <div className="col-xs-12 col-md-5">
             Bandbazaar.com is an online platform that provides marketing
-            <br />
+            <br/>
+
             tools and industry opportunities for emerging musicians,
             <br />
             artists, bands, event manager’s photographers, graphic
@@ -61,15 +60,9 @@ export const Home = () => (
             Bandbazaar.com provide a social networking platform for bands
             <br />
             to connect to their community
-          </p>
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-12 col-md-6">
-                <div className="app-thumbnail mb-80" />
-              </div>
-            </div>
           </div>
-        </Container>
+          </div>
+          </div>
       </Jumbo>
       <OurServices />
       <Everything />
