@@ -6,6 +6,7 @@ import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/navbar/NavigationBar";
+import Footers from './components/Footers';
 import { Jumbotron } from "./components/Jumbotron";
 import Everything from "../src/slider/Everything";
 import Youtube from "../src/youtube/Youtube";
@@ -31,6 +32,7 @@ class App extends Component {
                 <Route component={NoMatch} />
               </Switch>
             </Layout>
+            <Footers />
           </Router>
         </React.Fragment>
       </div>
