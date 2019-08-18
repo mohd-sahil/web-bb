@@ -5,7 +5,6 @@ import Jumbotron from "../Jumbotron";
 import Youtube from "../../youtube/Youtube";
 import Everything from "../../slider/Everything";
 import OurServices from "../OurServices";
-import Footers from "../Footers";
 import bgimage from "../../assets/bg-img/54.jpg";
 import ShopAmazon from "../ShopAmazon";
 
@@ -68,7 +67,6 @@ export const Home = () => (
       <Everything />
       <ShopAmazon />
       <Youtube />
-      <Footers />
     </Styles>
   </div>
 );
