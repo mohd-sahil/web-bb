@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const HoverText = styled.p`
 	color: #646464;
 	:hover {
-		color: #ed1212;
+		color: white;
 		cursor: pointer;
 	}
 `
@@ -14,15 +14,15 @@ const HoverText = styled.p`
 const divStyle = {
     color:"white",
     margin:"2px",
-    marginTop:"80px",
-    fontSize:"13px",
-    padding:"20px",
-    paddingTop:"50px",
+    marginTop:"82px",
+    fontSize:"12px",
+    padding:"5px",
+    paddingTop:"30px"
 }
 const headStyle = {
-    fontSize:"15px",
+    fontSize:"12px",
     fontWeight:"600",
-    marginBottom:"20px"
+    marginBottom:"22px"
 }
 function Footers(){
     return(
@@ -32,12 +32,12 @@ function Footers(){
                         <div className="col-md-5 col-xs-12">
                             <h3 style={headStyle}>Extra features</h3>
                             <ul style={{ listStyleType: "none" }}>
-                                <li style={{padding:"10px"}}><HoverText >Featured Band</HoverText></li>
-                                <li style={{padding:"10px"}}><HoverText >Featured Artists</HoverText></li>
-                                <li style={{padding:"10px"}}><HoverText >Featured Studios</HoverText></li>
-                                <li style={{padding:"10px"}}><HoverText >Featured Events</HoverText></li>
-                                <li style={{padding:"10px"}}><HoverText >About Us</HoverText></li>
-                                <li style={{padding:"10px"}}><HoverText >Contacts</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >Featured Band</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >Featured Artists</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >Featured Studios</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >Featured Events</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >About Us</HoverText></li>
+                                <li style={{padding:"2px"}}><HoverText >Contacts</HoverText></li>
                             </ul>
                         </div>
                         <div className="col-md-4 col-xs-12" style={{fontWeight:"595"}}>
@@ -58,7 +58,7 @@ function Footers(){
             backgroundColor: "#646464",
         }}
     />
-                   <div className="row justify-content-center" style={{color:"white",textAlign:"center",padding:"15px",fontSize:"12px"}}>
+                   <div className="row justify-content-center" style={{color:"white",textAlign:"center",padding:"12px",fontSize:"12px"}}>
                         <div className="col-md-12">
                             <b>Property of MACH15 Group</b>
                         </div>
