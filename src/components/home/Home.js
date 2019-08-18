@@ -8,6 +8,7 @@ import OurServices from "../OurServices";
 
 import bgimage from "../../assets/bg-img/54.jpg";
 import ShopAmazon from "../ShopAmazon";
+import Artists from "../artist/Artists";
 
 const Styles = styled.div`
   .jumbo {
@@ -67,6 +68,7 @@ export const Home = () => (
       <OurServices />
       <Everything />
       <ShopAmazon />
+      <Artists />
       <Youtube />
     </Styles>
   </div>
