@@ -16,8 +16,7 @@ const headStyle = {
 }
 function Footers(){
     return(
-        <div style={{backgroundColor:"#222"}}>
-            <footer id="footer" className="footer">
+            <footer id="footer" className="footer" style={{backgroundColor:"#222"}}>
                 <div className="container">
                     <div className="row" style={divStyle}>
                         <div className="col-md-5 col-xs-12">
@@ -56,7 +55,6 @@ function Footers(){
                     </div>
                 </div>
             </footer>
-         </div>
     );
 }
 export default Footers;
