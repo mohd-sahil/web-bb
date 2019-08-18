@@ -1,5 +1,15 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import styled from 'styled-components';
+
+
+const HoverText = styled.p`
+	color: #646464;
+	:hover {
+		color: #ed1212;
+		cursor: pointer;
+	}
+`
 
 const divStyle = {
     color:"white",
@@ -22,12 +32,12 @@ function Footers(){
                         <div className="col-md-5 col-xs-12">
                             <h3 style={headStyle}>Extra features</h3>
                             <ul style={{ listStyleType: "none" }}>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>Featured Band</a></li>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>Featured Artists</a></li>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>Featured Studios</a></li>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>Featured Events</a></li>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>About Us</a></li>
-                                <li style={{padding:"10px"}}><a href="#" style={{color: "#646464"}}>Contacts</a></li>
+                                <li style={{padding:"10px"}}><HoverText >Featured Band</HoverText></li>
+                                <li style={{padding:"10px"}}><HoverText >Featured Artists</HoverText></li>
+                                <li style={{padding:"10px"}}><HoverText >Featured Studios</HoverText></li>
+                                <li style={{padding:"10px"}}><HoverText >Featured Events</HoverText></li>
+                                <li style={{padding:"10px"}}><HoverText >About Us</HoverText></li>
+                                <li style={{padding:"10px"}}><HoverText >Contacts</HoverText></li>
                             </ul>
                         </div>
                         <div className="col-md-4 col-xs-12" style={{fontWeight:"595"}}>
